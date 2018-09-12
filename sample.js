@@ -15,7 +15,7 @@ $(document).ready(function(){
     $("#sum_indicate").text(sum);
     let ave = sum / subject_points.length;
     $("#average_indicate").text(ave);
-  };
+  }
 
   function get_achievement(){
     let result = Number($("#average_indicate").text());
@@ -30,8 +30,8 @@ $(document).ready(function(){
     }
     else if(result<40){
       $("#evaluation").text("D");
-    };
-  };
+    }
+  }
 
   function get_pass_or_failure(){
    let subjects = [Number($('#national_language').val()),
